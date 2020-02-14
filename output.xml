@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200214 14:59:33.951" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/wirawatb/Documents/robotFrameworkTutorial/uppercase.robot" id="s1" name="Uppercase">
+<test id="s1-t1" name="TC01 Uppercase String">
+<kw name="Check Uppercase1">
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<kw name="Convert To Uppercase" library="String">
+<doc>Converts string to uppercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.040" level="INFO">${str} = HELLO NOST</msg>
+<status status="PASS" endtime="20200214 14:59:34.040" starttime="20200214 14:59:34.038"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>HELLO NOST</arg>
+</arguments>
+<status status="PASS" endtime="20200214 14:59:34.041" starttime="20200214 14:59:34.040"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.041" starttime="20200214 14:59:34.038"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.041" critical="yes" starttime="20200214 14:59:34.037"></status>
+</test>
+<test id="s1-t2" name="TC02 Uppercase String">
+<kw name="Check Uppercase1">
+<arguments>
+<arg>${text2}</arg>
+</arguments>
+<kw name="Convert To Uppercase" library="String">
+<doc>Converts string to uppercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.044" level="INFO">${str} = HELLO TEST</msg>
+<status status="PASS" endtime="20200214 14:59:34.044" starttime="20200214 14:59:34.043"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>HELLO NOST</arg>
+</arguments>
+<msg timestamp="20200214 14:59:34.045" level="FAIL">HELLO TEST != HELLO NOST</msg>
+<status status="FAIL" endtime="20200214 14:59:34.045" starttime="20200214 14:59:34.044"></status>
+</kw>
+<status status="FAIL" endtime="20200214 14:59:34.045" starttime="20200214 14:59:34.042"></status>
+</kw>
+<status status="FAIL" endtime="20200214 14:59:34.045" critical="yes" starttime="20200214 14:59:34.042">HELLO TEST != HELLO NOST</status>
+</test>
+<test id="s1-t3" name="TC03 Uppercase String">
+<kw name="Check Uppercase1">
+<arguments>
+<arg>${text3}</arg>
+</arguments>
+<kw name="Convert To Uppercase" library="String">
+<doc>Converts string to uppercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.050" level="INFO">${str} = HELLO NOST</msg>
+<status status="PASS" endtime="20200214 14:59:34.050" starttime="20200214 14:59:34.049"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>HELLO NOST</arg>
+</arguments>
+<status status="PASS" endtime="20200214 14:59:34.050" starttime="20200214 14:59:34.050"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.051" starttime="20200214 14:59:34.048"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.051" critical="yes" starttime="20200214 14:59:34.046"></status>
+</test>
+<test id="s1-t4" name="TC04 Uppercase String">
+<kw name="Check Uppercase2">
+<arguments>
+<arg>${text2}</arg>
+</arguments>
+<kw name="Convert To Uppercase" library="String">
+<doc>Converts string to uppercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.053" level="INFO">${str} = HELLO TEST</msg>
+<status status="PASS" endtime="20200214 14:59:34.053" starttime="20200214 14:59:34.053"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>HELLO TEST</arg>
+</arguments>
+<status status="PASS" endtime="20200214 14:59:34.054" starttime="20200214 14:59:34.054"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.054" starttime="20200214 14:59:34.052"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.055" critical="yes" starttime="20200214 14:59:34.051"></status>
+</test>
+<test id="s1-t5" name="TC05 Uppercase String">
+<kw name="Check Uppercase2">
+<arguments>
+<arg>${text4}</arg>
+</arguments>
+<kw name="Convert To Uppercase" library="String">
+<doc>Converts string to uppercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.057" level="INFO">${str} = HELLO TEST</msg>
+<status status="PASS" endtime="20200214 14:59:34.057" starttime="20200214 14:59:34.057"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>HELLO TEST</arg>
+</arguments>
+<status status="PASS" endtime="20200214 14:59:34.057" starttime="20200214 14:59:34.057"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.058" starttime="20200214 14:59:34.056"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.058" critical="yes" starttime="20200214 14:59:34.055"></status>
+</test>
+<test id="s1-t6" name="TC06 Lowercase String">
+<kw name="Check Lowercase1">
+<arguments>
+<arg>${text3}</arg>
+</arguments>
+<kw name="Convert To Lowercase" library="String">
+<doc>Converts string to lowercase.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200214 14:59:34.060" level="INFO">${str} = hello nost</msg>
+<status status="PASS" endtime="20200214 14:59:34.060" starttime="20200214 14:59:34.059"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${str}</arg>
+<arg>hello nost</arg>
+</arguments>
+<status status="PASS" endtime="20200214 14:59:34.060" starttime="20200214 14:59:34.060"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.061" starttime="20200214 14:59:34.059"></status>
+</kw>
+<status status="PASS" endtime="20200214 14:59:34.061" critical="yes" starttime="20200214 14:59:34.058"></status>
+</test>
+<status status="FAIL" endtime="20200214 14:59:34.062" starttime="20200214 14:59:33.953"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="5">Critical Tests</stat>
+<stat fail="1" pass="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Uppercase" pass="5">Uppercase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
